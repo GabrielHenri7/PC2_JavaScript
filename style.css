@@ -1,0 +1,28 @@
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+
+form{
+    
+    text-align: left;
+    border: solid 2px rgb(175, 185, 181);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 20px rgb(30, 48, 165);
+    width: fit-content;
+    
+
+}
+
+.centro-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50vh;
+    margin-top: 20vh;
+
+}
