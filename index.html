@@ -6,21 +6,49 @@
     <title>JavaScript</title>
     <link rel="stylesheet" href="style.css">
 
+    <script>
+        function MyClick ()
+        {
+            let nome = document.getElementById("primeiroNome").value;
+            let ultimoNome = document.getElementById("ultimoNome").value;
+            let idade = document.getElementById("idade").value;
+            let msg = "";
+
+            if(idade >= 18){
+                msg = "Maior de Idade ";
+
+            }
+            else{
+                msg = "Menor de Idade ";
+
+            }
+
+            alert("O seu nome é: " + nome + " " +  ultimoNome +  "\nMensagem: " + msg);
+
+
+
+
+        }
+
+    </script>
+
     
 </head>
 <body>
  
 <div class="centro-body">
-    <form action="Cria">
+    <form>
         <h1>Formulário Qualquer</h1>
         <br>
-        <label style="margin-left: 100px;" for="PrimeiroNome">Digite seu primeiro nome:</label>
-        <input type="text" id="PrimeiroNome" name="PrimeiroNome">
+        <label style="margin-left: 70px;" for="primeiroNome">Digite seu primeiro nome:</label>
+        <input type="text" id="primeiroNome" name="primeiroNome">
         <label for=""></label><br><br>
-        <label style="margin-left: 100px;" for="UltimoNome">Digite seu ultimo nome:</label>
-        <input type="text" id="UltimoNome" name="UltimoNome">
+        <label style="margin-left: 70px;" for="ultimoNome">Digite seu ultimo nome:</label>
+        <input type="text" id="ultimoNome" name="ultimoNome"><br>
+        <label style="margin-left: 70px;" for="idade">Digite sua Idade:</label>
+        <input type="text" id="idade" name="idade">
         <br><br>
-        <input type="submit" value="Enviar" id="submit">
+        <input style="width: 120px;" type="button" name="Enviar" value="Enviar" id="enviar" onclick="MyClick()">
     </form>
 </div>
 
